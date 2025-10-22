@@ -1,0 +1,59 @@
+<!-- Projeto: Calculadora 2.1 -->
+<!DOCTYPE HTML>
+<html>
+    <!-- Criando o cabeçalho de metadados-->
+    <head>
+       <meta name= "viewport" content= "width=device-width, initial-scale=1.0">
+       <title>Calculadora</title>
+       <link rel="stylesheet" href="style.css">
+    </head>
+    
+    <!-- Conteúdo visual da página -->
+    <body>
+        
+        <!-- Criando a Calculadora -->
+        <div class="calculator">
+            <!--Criando o display (tela) da Calculadora -->
+            <input type="text" id="display" disabled>
+            
+        <!-- Botões da Calculadora -->
+        
+        <div class="buttons">
+            
+            <button onclick="clearDisplay()">C</button>
+            <button onclick="appendSymbol('/')">÷</button>
+            <button onclick="appendSymbol('*')">x</button>
+            <button onclick="deleteLast()">←</button>
+            
+            <button onclick="appendSymbol('7')">7</button>
+            <button onclick="appendSymbol('8')">8</button>
+            <button onclick="appendSymbol('9')">9</button>
+            <button onclick="appendSymbol('-')">-</button>
+            
+            <button onclick="appendSymbol('4')">4</button>
+            <button onclick="appendSymbol('5')">5</button>
+            <button onclick="appendSymbol('6')">6</button>
+            <button onclick="appendSymbol('+')">+</button>
+            
+            
+            <button onclick="appendSymbol('1')">1</button>
+            <button onclick="appendSymbol('2')">2</button>
+            <button onclick="appendSymbol('3')">3</button>
+            <button onclick="calculate()">=</button>
+            
+            <button onclick="appendSymbol('0')" class="zero">0</button>
+            <button onclick="appendSymbol('.')">.</button>
+            
+        </div>
+            
+        </div>
+        
+        
+        <!-- Carregamento do arquivo javascript -->
+        <script src="script.js"></script>
+        
+    </body>
+    
+    
+    
+</html>
